@@ -25,13 +25,14 @@ const Contact = () => {
     });
     result = await result.json();
     console.warn(result);
-    // localStorage.setItem("user", JSON.stringify(result));
-    // if (result) {
-    //   navigate("/");
-    // }
+    localStorage.setItem("user", JSON.stringify(result));
+    if (result) {
+      navigate("/");
+    }
   };
   return (
     <div className="contactForm">
+      <h1 className="firstLetter"> Us</h1>
       <div className="form">
         <div className="row">
           <div className="input-group">

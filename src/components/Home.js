@@ -8,12 +8,19 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDumbbell, faUser, faPhone, faMessage,faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDumbbell,
+  faUser,
+  faPhone,
+  faMessage,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 import fitnessimage from "../assets/fitnessimage.png";
 import Fitnessdata from "./Fitnessdata";
 import Rightcontainer from "./Rightcontainer";
 import TrainWithUsData from "./TrainWithUsData";
 import Trainwithus from "./Trainwithus";
+import Boast from "./Boast";
 const Home = () => {
   return (
     <>
@@ -40,7 +47,7 @@ const Home = () => {
               />
             </div>
           </div>
-          <p className="theme2" data-aos="zoom-in">
+          <p className="theme2" data-aos="fade-out">
             <div className="extraInfo">Get Bigger Stronger and Ripped !</div>
             <div className="extraInfo">
               We are described as the new revolution in the context of muscle
@@ -50,7 +57,7 @@ const Home = () => {
           </p>
         </main>
       </div>
-      <div className="home2Parent" data-aos="zoom-out">
+      <div className="home2Parent" data-aos="fade-out">
         <h1 className="firstLetter"> No Gaps</h1>
         <div className="home2">
           <Menucard Cards={Cards} />
@@ -75,48 +82,12 @@ const Home = () => {
           <Rightcontainer Fitnessdata={Fitnessdata} />
         </div>
       </section>
-      <div className="trainsec" data-aos="zoom-out-up">
+      <div className="trainsec" data-aos="fade-out">
         <h1 className="firstLetter"> With Us</h1>
         <Trainwithus TrainWithUsData={TrainWithUsData} />
       </div>
       <div className="home4" id="brands">
-        <div>
-          <h1>Brands</h1>
-          <article>
-            <div
-              style={{
-                animationDelay: "0.3s",
-              }}
-            >
-              <AiFillGoogleCircle />
-              <p>Google</p>
-            </div>
-            <div
-              style={{
-                animationDelay: "0.5s",
-              }}
-            >
-              <AiFillAmazonCircle />
-              <p>Amazon</p>
-            </div>
-            <div
-              style={{
-                animationDelay: "0.7s",
-              }}
-            >
-              <AiFillYoutube />
-              <p>Youtube</p>
-            </div>
-            <div
-              style={{
-                animationDelay: "0.9s",
-              }}
-            >
-              <AiFillInstagram />
-              <p>Instagram</p>
-            </div>
-          </article>
-        </div>
+        <Boast />
       </div>
     </>
   );

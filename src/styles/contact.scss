@@ -5,18 +5,15 @@
   font-family: "poppins", sans-serif;
   box-sizing: border-box;
 }
-.contactForm{
+.contactForm {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(
-      120deg,
-      rgba(0, 0, 0, 0.8) 70%,
-      #1240fa
-    ),
+  background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.8) 70%, #1240fa),
     url("../assets/formbackground.jpeg");
   background-position: center;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -72,4 +69,15 @@ textarea:valid ~ label {
 }
 .row .input-group {
   flex-basis: 48%;
+}
+.contactForm h1::before {
+  color: $compliment;
+  content: "Contact";
+}
+.form button :hover {
+  background-color: #1240fa;
+}
+button-clicked {
+  background-color: green;
+  color: white;
 }
