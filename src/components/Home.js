@@ -21,6 +21,7 @@ import Rightcontainer from "./Rightcontainer";
 import TrainWithUsData from "./TrainWithUsData";
 import Trainwithus from "./Trainwithus";
 import Boast from "./Boast";
+import Testimonials from "./Testimonials";
 const Home = () => {
   return (
     <>
@@ -86,8 +87,11 @@ const Home = () => {
         <h1 className="firstLetter"> With Us</h1>
         <Trainwithus TrainWithUsData={TrainWithUsData} />
       </div>
-      <div className="home4" id="brands">
+      <div className="home4">
         <Boast />
+      </div>
+      <div className="home5">
+        <Testimonials />
       </div>
     </>
   );

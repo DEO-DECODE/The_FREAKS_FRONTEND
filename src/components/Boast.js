@@ -12,7 +12,7 @@ const Boast = () => {
           <motion.div
             initial={{ left: "238px" }}
             whileInView={{ left: "8px" }}
-            transition={transition}
+            transition={{ ...transition, type: "tween" }}
           ></motion.div>
           <span>The Best Fitness Club of the City</span>
         </div>
@@ -51,7 +51,13 @@ const Boast = () => {
       </div>
       <div className="right-h">
         <img src={boast_img} className="boast-image" />
-        <img src={boast_img_back} className="boast-image-back" />
+        <motion.img
+          initial={{ right: "20rem" }}
+          whileInView={{ right: "30rem" }}
+          transition={transition}
+          src={boast_img_back}
+          className="boast-image-back"
+        />
       </div>
     </div>
   );
