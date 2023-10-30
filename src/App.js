@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -12,7 +12,7 @@ import "./styles/App.scss";
 import "./styles/header.scss";
 import "./styles/home.scss";
 import "./styles/Menucard.scss";
-import "./styles/contact.scss"
+import "./styles/contact.scss";
 
 // import "./styles/Services.scss";
 const App = () => {
@@ -32,20 +32,15 @@ const App = () => {
           path="/Health"
           element={
             <Health
-            setProgress={setProgress}
-            key="health"
-            pageSize={pageSize}
-            country="in"
-            category="health"
+              setProgress={setProgress}
+              key="health"
+              pageSize={pageSize}
+              country="in"
+              category="health"
             />
           }
         />
-        <Route
-          path="/contact"
-          element={
-            <Contact/>
-          }
-        />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

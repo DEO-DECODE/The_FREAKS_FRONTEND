@@ -1,4 +1,4 @@
-import image1 from "../assets/member1.jpeg";
+import image1 from "../assets/member1.jpg";
 import image2 from "../assets/member2.jpeg";
 import image3 from "../assets/member3.jpg";
 export const TestimonialsData = [
