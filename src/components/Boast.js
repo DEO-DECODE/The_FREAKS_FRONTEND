@@ -7,6 +7,7 @@ const transition = { type: "spring", duration: 3 };
 const Boast = () => {
   return (
     <div className="boast" data-aos="fade-out">
+      <div className="blur boast-blur"></div>
       <div className="left-h">
         <div className="the-best-ad">
           <motion.div
