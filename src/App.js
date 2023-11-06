@@ -7,7 +7,6 @@ import Services from "./components/Services";
 import Health from "./components/Health";
 import LoadingBar from "react-top-loading-bar";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 // CSS IMPORTS
 import "./styles/App.scss";
 import "./styles/header.scss";
@@ -43,7 +42,6 @@ const App = () => {
         />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
     </Router>
   );
 };

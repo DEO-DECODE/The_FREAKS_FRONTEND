@@ -1,6 +1,7 @@
 import React from "react";
 import Cards from "./FunctionalityApi";
 import Menucard from "./Menucard";
+import Footer from "./Footer";
 import {
   AiFillGoogleCircle,
   AiFillAmazonCircle,
@@ -93,6 +94,7 @@ const Home = () => {
       <div className="home5">
         <Testimonials />
       </div>
+      <Footer />
     </>
   );
 };
