@@ -74,7 +74,7 @@ const Home = () => {
                 What
                 <span className="firstLetter"> We</span>
                 <br />
-                Provide
+                Do
               </h3>
             </div>
           </div>

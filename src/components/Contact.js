@@ -25,9 +25,10 @@ const Contact = () => {
     });
     result = await result.json();
     console.warn(result);
-    localStorage.setItem("user", JSON.stringify(result));
-    if (result) {
+    if (result.success) {
       navigate("/");
+    } else {
+      alert(result.message);
     }
   };
   return (

@@ -51,8 +51,7 @@ const Trainwithus = ({ TrainWithUsData }) => {
             })}
           </span>
         </div>
-        <div className="rightContainerGallery"
-        data-aos="zoom-in">
+        <div className="rightContainerGallery" data-aos="zoom-in">
           {TrainWithUsData.map((curElem) => {
             return (
               <div className="infoGallery">

@@ -13,7 +13,7 @@ import "./styles/header.scss";
 import "./styles/home.scss";
 import "./styles/Menucard.scss";
 import "./styles/contact.scss";
-
+// c1eecd5c46d54f70855eb527d6645754
 // import "./styles/Services.scss";
 const App = () => {
   const pageSize = 6;

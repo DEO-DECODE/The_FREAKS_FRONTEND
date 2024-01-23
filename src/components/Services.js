@@ -10,7 +10,7 @@ const Services = ({ ServiceData }) => {
   useEffect(() => {
     setTimeout(() => {
       setIndex((index + 1) % ServiceData.length);
-    }, 3000);
+    }, 1500);
   }, [index]);
 
   return (

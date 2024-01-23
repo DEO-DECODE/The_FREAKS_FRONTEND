@@ -8,6 +8,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  transition: all 1s;
   //   border: 2px solid rgb(255, 123, 0);
 }
 .gallerycarousel {
@@ -20,6 +21,7 @@
   margin: 2rem 0;
   transition: all 0.5s;
   margin: 0rem 2rem;
+  transition: all 1s;
   //   border: 2px solid yellow;
 }
 
@@ -62,9 +64,9 @@
 }
 
 .indicator {
-  background-color: white;
-  height: 0.5rem;
-  width: 0.5rem;
+  background-color: $compliment;
+  height: 1px;
+  width: 10px;
   border-radius: 100%;
   border: none;
   outline: none;
@@ -74,7 +76,7 @@
 }
 
 .indicator-inactive {
-  background-color: grey;
+  background-color: $textColor;
 }
 .gallery::before {
   content: "";
